@@ -1,0 +1,22 @@
+.oj-web-applayout-header-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+.oj-sm-align-items-baseline {
+  align-items: center;
+}
+
+.oj-navigationlist-app-level.oj-navigationlist-horizontal
+  .oj-navigationlist-item.oj-selected
+  a.oj-navigationlist-item-content
+  > .oj-navigationlist-item-label {
+  color: #ff7800;
+}
+.oj-navigationlist-app-level.oj-navigationlist-horizontal:not(.oj-navigationlist-icon-only)
+  .oj-navigationlist-item.oj-selected:not(.oj-hover)
+  .oj-navigationlist-item-icon {
+  color: #ff7800;
+}
+.oj-navigationlist-item.oj-selected {
+  border-color: #ff7800 !important;
+}

@@ -1,0 +1,156 @@
+<!--
+ Copyright (c) 2014, 2020, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding">
+  <h2>Add New Customer</h2>
+  <oj-form-layout max-columns="3" direction="row">
+    <oj-input-text
+      label-hint="Code Customer"
+      disabled="true"
+      value="0000"
+    ></oj-input-text>
+    <oj-input-text
+      id="NameCustomer"
+      required="true"
+      label-hint="Name Customer"
+      autocomplete="off"
+      validators="[[valid_Name]]"
+      value="{{NameCustomer}}"
+    ></oj-input-text>
+    <oj-label for="Governorate">Governorate</oj-label>
+    <oj-combobox-one
+      id="Governorate"
+      value="{{val_Country}}"
+      on-value-changed="[[valueChangeCountry]]"
+      options="{{Country_Op}}"
+      style="max-width: 18.1em;"
+    >
+    </oj-combobox-one>
+    <oj-label for="City">City</oj-label>
+    <oj-combobox-one
+      id="City"
+      value="{{val_City}}"
+      options="{{City_Op}}"
+      style="max-width: 18.1em;"
+    >
+    </oj-combobox-one>
+
+    <oj-input-number
+      id="District_Number"
+      aria-label="District_Number"
+      label-hint="District Number"
+      min="1"
+      value="{{District_Number}}"
+    ></oj-input-number>
+
+    <oj-input-number
+      id="Neighboring_Number"
+      aria-label="Neighboring_Number"
+      label-hint="Neighboring Number"
+      min="1"
+      value="{{Neighboring_Number}}"
+    ></oj-input-number>
+
+    <oj-input-number
+      id="Block_Number"
+      aria-label="Block_Number"
+      label-hint="Block Number"
+      min="1"
+      value="{{Block_Number}}"
+    ></oj-input-number>
+
+    <oj-input-number
+      id="Floor_Number"
+      aria-label="Floor_Number"
+      label-hint="Floor Number"
+      min="1"
+      value="{{Floor_Number}}"
+    ></oj-input-number>
+
+    <oj-input-number
+      id="Flat_Number"
+      aria-label="Flat_Number"
+      label-hint="Flat Number"
+      min="0"
+      value="{{Flat_Number}}"
+    ></oj-input-number>
+    <oj-text-area
+      id="info"
+      label-hint="Info"
+      rows="2"
+      autocomplete="off"
+      value="{{info}}"
+    >
+    </oj-text-area>
+    <oj-label for="Phone">Add New Phone Number</oj-label>
+
+    <oj-combobox-many
+      id="Phone"
+      on-value-changed="[[valueChangeHandler]]"
+      value="{{Phone}}"
+      messages-custom="{{error_Phone}}"
+      style="max-width: 20em;"
+    >
+    </oj-combobox-many>
+
+    <oj-button
+      id="Save"
+      on-oj-action="[[Save]]"
+      class="but-Style oj-button-primary"
+    >
+      Save
+    </oj-button>
+  </oj-form-layout>
+  <oj-table
+    id="table"
+    aria-label="Customer Table"
+    data="[[dataprovider]]"
+    selection-mode='{"row": "multiple", "column": "multiple"}'
+    dnd='{"reorder": {"columns": "enabled"}}'
+    scroll-policy="loadMoreOnScroll"
+    scroll-policy-options='{"fetchSize": 10}'
+    columns='[{"headerText": "Customer Id", 
+              "field": "Cust_ID",
+              "headerClassName": "oj-sm-only-hide",
+              "className": "oj-sm-only-hide",
+              "resizable": "enabled"},
+            {"headerText": "Customer Name", 
+              "field": "Cust_Name",
+              "resizable": "enabled"},
+            {"headerText": "Governorate Name", 
+              "field": "Governorate_Name",
+              "headerClassName": "oj-sm-only-hide",
+              "className": "oj-sm-only-hide",
+              "resizable": "enabled"},
+            {"headerText": "District Number", 
+              "field": "District_Number",
+              "resizable": "enabled"},
+              {"headerText": "Neighboring Number", 
+              "field": "Neighboring_Number",
+              "resizable": "enabled"},
+              {"headerText": "Block Number", 
+                "field": "Block_Number",
+                "resizable": "enabled"},
+                {"headerText": "Floor Number", 
+                "field": "Floor_Number",
+                "resizable": "enabled"},
+                {"headerText": "Flat Number", 
+                  "field": "Flat_Number",
+                  "resizable": "enabled"},
+                  {"headerText": "Info", 
+                  "field": "Info",
+                  "resizable": "enabled"},
+                  {"headerText": "Point", 
+                    "field": "Point",
+                    "resizable": "enabled"},
+                    {"headerText": "City Name", 
+                    "field": "cityId",
+                    "resizable": "enabled"},
+                    {"headerText": "Date", 
+                    "field": "Date",
+                    "resizable": "enabled"}]'
+    style="width: 100%; height: 400px;"
+  >
+  </oj-table>
+</div>

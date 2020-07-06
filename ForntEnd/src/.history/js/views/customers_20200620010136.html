@@ -1,0 +1,107 @@
+<!--
+ Copyright (c) 2014, 2020, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding">
+  <h1>Add New Customer</h1>
+  <div id="div1">
+    <h4>States</h4>
+    <oj-form-layout max-columns="{{columns}}" direction="row">
+      <oj-input-text value="value text" label-hint="enabled"></oj-input-text>
+      <oj-input-text
+        value="value text"
+        label-hint="disabled"
+        disabled="true"
+      ></oj-input-text>
+      <oj-input-text
+        value="value text"
+        label-hint="readonly"
+        readonly="true"
+      ></oj-input-text>
+      <oj-input-text label-hint="enabled no value"></oj-input-text>
+      <oj-input-text
+        label-hint="disabled no value"
+        disabled="true"
+      ></oj-input-text>
+      <oj-input-text
+        label-hint="readonly no value"
+        readonly="true"
+      ></oj-input-text>
+    </oj-form-layout>
+
+    <h4 class="oj-sm-margin-4x-top">
+      Required, Clear Icon, Placeholder & Max Length
+    </h4>
+    <oj-form-layout max-columns="{{columns}}" direction="row">
+      <oj-input-text required="true" label-hint="required"></oj-input-text>
+      <oj-input-text
+        clear-icon="always"
+        label-hint="clear-icon"
+        value="value text"
+      ></oj-input-text>
+      <oj-input-text
+        placeholder="placeholder text"
+        label-hint="placeholder"
+      ></oj-input-text>
+      <oj-input-text
+        id="text-input"
+        value="{{value}}"
+        raw-value="{{rawValue}}"
+        length.max="15"
+        length.count-by="codeUnit"
+        label-hint="max length"
+      >
+      </oj-input-text>
+    </oj-form-layout>
+
+    <h4 class="oj-sm-margin-4x-top">
+      Help [Help icon does not show up for an inside label]
+    </h4>
+    <oj-form-layout max-columns="{{columns}}" direction="row" label-edge="top">
+      <oj-input-text
+        help.instruction="help.instruction text"
+        label-hint="help.instruction"
+        label-edge="provided"
+      ></oj-input-text>
+      <oj-input-text
+        help-hints.definition="help-hints.definition text"
+        label-hint="help-hints.definition"
+        label-edge="provided"
+      ></oj-input-text>
+      <oj-input-text
+        help-hints.source="http://www.oracle.com"
+        label-hint="help-hints.source"
+        label-edge="provided"
+      ></oj-input-text>
+    </oj-form-layout>
+
+    <h4 class="oj-sm-margin-4x-top">Messages</h4>
+    <oj-form-layout max-columns="{{columns}}" direction="row">
+      <oj-input-text
+        messages-custom="[[error]]"
+        value="value text"
+        label-hint="error"
+      ></oj-input-text>
+      <oj-input-text
+        messages-custom="[[warning]]"
+        value="value text"
+        label-hint="warning"
+      ></oj-input-text>
+      <oj-input-text
+        messages-custom="[[info]]"
+        value="value text"
+        label-hint="info"
+      ></oj-input-text>
+      <oj-input-text
+        messages-custom="[[confirmation]]"
+        value="value text"
+        label-hint="confirmation"
+      ></oj-input-text>
+      <oj-input-text
+        messages-custom="[[multiple]]"
+        value="value text"
+        label-hint="multiple"
+      ></oj-input-text>
+    </oj-form-layout>
+  </div>
+</div>

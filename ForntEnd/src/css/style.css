@@ -1,0 +1,84 @@
+.oj-web-applayout-header-title {
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 4px !important;
+}
+.oj-sm-align-items-baseline {
+  align-items: center;
+}
+
+.oj-navigationlist-app-level.oj-navigationlist-horizontal
+  .oj-navigationlist-item.oj-selected
+  a.oj-navigationlist-item-content
+  > .oj-navigationlist-item-label {
+  color: #ff7800;
+}
+.oj-navigationlist-app-level.oj-navigationlist-horizontal:not(.oj-navigationlist-icon-only)
+  .oj-navigationlist-item.oj-selected:not(.oj-hover)
+  .oj-navigationlist-item-icon {
+  color: #ff7800;
+}
+.oj-navigationlist-item.oj-selected {
+  border-color: #ff7800 !important;
+}
+.oj-navigationlist-app-level.oj-navigationlist-horizontal
+  .oj-navigationlist-item.oj-hover
+  .oj-navigationlist-item-icon {
+  color: #ff7800;
+}
+.oj-navigationlist-item.oj-hover:not(.oj-selected) {
+  border-color: #ff7800;
+}
+.oj-navigationlist-app-level.oj-navigationlist-horizontal
+  .oj-navigationlist-item.oj-hover:not(.oj-selected)
+  a.oj-navigationlist-item-content
+  > .oj-navigationlist-item-label {
+  color: #ff7800;
+}
+.oj-button-jqui.oj-selected.oj-hover.oj-button-half-chrome,
+.oj-button.oj-selected.oj-hover.oj-button-half-chrome .oj-button-button {
+  color: white;
+  background-color: #ff7800;
+  border-color: #ff7800;
+}
+.oj-button-jqui.oj-selected.oj-button-half-chrome,
+.oj-button.oj-selected.oj-button-half-chrome .oj-button-button {
+  background-color: #ff7800;
+  border-color: #ff7800;
+}
+.oj-web-applayout-max-width {
+  max-width: 95%;
+}
+.but-Style {
+  margin-top: 16px;
+  height: 50px;
+  width: 132px;
+  margin-left: 7px;
+  font-weight: bold;
+}
+.oj-button-primary.oj-buttonset
+  .oj-button-jqui.oj-default.oj-button-full-chrome,
+.oj-button-primary.oj-buttonset
+  .oj-button-jqui.oj-focus-only.oj-button-full-chrome,
+.oj-button-primary.oj-button-jqui.oj-default.oj-button-full-chrome,
+.oj-button-primary.oj-button-jqui.oj-focus-only.oj-button-full-chrome,
+.oj-button-primary.oj-button.oj-default.oj-button-full-chrome .oj-button-button,
+.oj-button-primary.oj-button.oj-focus-only.oj-button-full-chrome
+  .oj-button-button,
+.oj-button-primary.oj-buttonset
+  .oj-button-jqui.oj-hover.oj-button-full-chrome:not(.oj-active),
+.oj-button-primary.oj-button-jqui.oj-hover.oj-button-full-chrome:not(.oj-active),
+.oj-button-primary.oj-button.oj-hover.oj-button-full-chrome:not(.oj-active)
+  .oj-button-button {
+  background-color: #ff7800;
+  font-weight: bolder;
+  font-size: 20px;
+  cursor: pointer;
+}
+.oj-navigationlist-item-label .oj-hover {
+  border: none;
+}
+.oj-navigationlist-horizontal:not(.oj-navigationlist-icon-only)
+  .oj-navigationlist-item-content:hover {
+  text-decoration: none;
+}

@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "edilevary"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "City": {
+    "dataSource": "edilevary",
+    "public": true
+  },
+  "Customer": {
+    "dataSource": "edilevary",
+    "public": true
+  },
+  "phone_number": {
+    "dataSource": "edilevary",
+    "public": true
+  },
+  "country": {
+    "dataSource": "edilevary",
+    "public": true
+  },
+  "customer_v": {
+    "dataSource": "edilevary",
+    "public": true
+  }
+}

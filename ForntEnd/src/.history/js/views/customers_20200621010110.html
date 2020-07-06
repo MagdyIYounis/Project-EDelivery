@@ -1,0 +1,63 @@
+<!--
+ Copyright (c) 2014, 2020, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding">
+  <h2>Add New Customer</h2>
+  <oj-form-layout max-columns="2" direction="row">
+    <oj-input-text
+      label-hint="Code Customer"
+      disabled="true"
+      value="0000"
+    ></oj-input-text>
+    <oj-input-text label-hint="Name Customer"></oj-input-text>
+    <oj-label for="Governorate">Governorate</oj-label>
+    <oj-combobox-one
+      id="Governorate"
+      value="{{val_Governorate}}"
+      style="max-width: 18.1em;"
+    >
+      <oj-option value="Damietta">Damietta</oj-option>
+    </oj-combobox-one>
+    <oj-label for="City">City</oj-label>
+    <oj-combobox-one id="City" value="{{val_City}}" style="max-width: 18.1em;">
+      <oj-option value="New Damietta">New Damietta</oj-option>
+    </oj-combobox-one>
+
+    <oj-input-number
+      id="District_Number"
+      aria-label="District_Number"
+      label-hint="District Number"
+      min="1"
+    ></oj-input-number>
+
+    <oj-input-number
+      id="Neighboring_Number"
+      aria-label="Neighboring_Number"
+      label-hint="Neighboring Number"
+      min="1"
+    ></oj-input-number>
+
+    <oj-input-number
+      id="Block_Number"
+      aria-label="Block_Number"
+      label-hint="Block Number"
+      min="1"
+    ></oj-input-number>
+
+    <oj-input-number
+      id="Floor_Number"
+      aria-label="Floor_Number"
+      label-hint="Floor Number"
+      min="1"
+    ></oj-input-number>
+
+    <oj-input-number
+      id="Flat_Number"
+      aria-label="Flat_Number"
+      label-hint="Flat Number"
+      min="0"
+    ></oj-input-number>
+    <oj-text-area id="info" label-hint="Info" rows="3"> </oj-text-area>
+  </oj-form-layout>
+</div>
